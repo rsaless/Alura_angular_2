@@ -1,3 +1,4 @@
+cd ..
 cd alurapic
 npm install
 cd ..
