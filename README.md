@@ -1,5 +1,5 @@
-# Alura Angular 1
-Este repositório se destina ao projeto desenvolvido no primeiro módulo de Angular da Alura. Dispondo de 2 projetos:
+# Alura Angular 2
+Continuação do projeto iniciado no primeiro módulo do curso de Angular da alura. Dispondo de 2 projetos:
 
 
 ## Alurapic
