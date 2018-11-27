@@ -12,8 +12,8 @@ Projeto Node com uma web API para o back-end da aplicação
 
 ### Método manual
 
-> git clone https://github.com/rsaless/Alura_angular_1   
-> cd Alura_angular_1    
+> git clone https://github.com/rsaless/Alura_angular_2     
+> cd Alura_angular_2      
 
 #### Alurapic (Angular)
 > cd alurapic  
@@ -28,8 +28,8 @@ Projeto Node com uma web API para o back-end da aplicação
 
 ### Método automatizado
 
-> git clone https://github.com/rsaless/Alura_angular_1   
-> cd Alura_angular_1    
+> git clone https://github.com/rsaless/Alura_angular_2     
+> cd Alura_angular_2      
 > cd scripts  
 > setup  
 

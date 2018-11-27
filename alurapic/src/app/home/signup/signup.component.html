@@ -10,24 +10,26 @@
     <div class="form-group">
         <input formControlName="fullName" placeholder="full name" class="form-control">
         <ap-vmessage *ngIf="signupForm.get('fullName').errors?.required" text="Full name is required!"></ap-vmessage>  
-        <ap-vmessage *ngIf="signupForm.get('fullName').errors?.minlenght" text="Minimum lenght is 2!"></ap-vmessage> 
-        <ap-vmessage *ngIf="signupForm.get('fullName').errors?.maxlenght" text="Maximum lenght is 40!"></ap-vmessage> 
+        <ap-vmessage *ngIf="signupForm.get('fullName').errors?.minlength" text="Minimum length is 2!"></ap-vmessage> 
+        <ap-vmessage *ngIf="signupForm.get('fullName').errors?.maxlength" text="Maximum length is 40!"></ap-vmessage> 
     </div>
     <div class="form-group">
         <input formControlName="userName" placeholder="user name" class="form-control">
         <ap-vmessage *ngIf="signupForm.get('userName').errors?.required" text="Username is required!"></ap-vmessage>  
-        <ap-vmessage *ngIf="signupForm.get('userName').errors?.minlenght" text="Minimum lenght is 2!"></ap-vmessage> 
-        <ap-vmessage *ngIf="signupForm.get('userName').errors?.maxlenght" text="Maximum lenght is 30!"></ap-vmessage> 
-        <ap-vmessage *ngIf="signupForm.get('userName').errors?.pattern" text="Must be lowercase and cannot start with numbers!"></ap-vmessage> 
+        <ap-vmessage *ngIf="signupForm.get('userName').errors?.minlength" text="Minimum length is 2!"></ap-vmessage> 
+        <ap-vmessage *ngIf="signupForm.get('userName').errors?.maxlength" text="Maximum length is 30!"></ap-vmessage> 
+        <ap-vmessage *ngIf="signupForm.get('userName').errors?.lowerCase" text="Must be lowercase, cannot contain special characters and cannot start with numbers!"></ap-vmessage>
+        <ap-vmessage *ngIf="signupForm.get('userName').errors?.userNameTaken" text="Username already taken!"></ap-vmessage>
+        <small *ngIf="signupForm.get('userName').valid" class="text-success">User avaliable</small> 
     </div>
     <div class="form-group">
         <input formControlName="password" placeholder="password" class="form-control" type="password" >
         <ap-vmessage *ngIf="signupForm.get('password').errors?.required" text="Password is required!"></ap-vmessage>  
-        <ap-vmessage *ngIf="signupForm.get('password').errors?.minlenght" text="Minimum lenght is 8!"></ap-vmessage> 
-        <ap-vmessage *ngIf="signupForm.get('password').errors?.maxlenght" text="Maximum lenght is 14!"></ap-vmessage>
+        <ap-vmessage *ngIf="signupForm.get('password').errors?.minlength" text="Minimum length is 8!"></ap-vmessage> 
+        <ap-vmessage *ngIf="signupForm.get('password').errors?.maxlength" text="Maximum length is 14!"></ap-vmessage>
     </div>
 
-    <button class="btn btn-primary btn-block">Register</button>
+    <button [disabled]="signupForm.Invalid || signupForm.pending" class="btn btn-primary btn-block">Register</button>
 
     <p>Already a user?<a [routerLink]="['']"> Sign In!</a></p>
     
