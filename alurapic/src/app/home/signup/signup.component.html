@@ -3,7 +3,7 @@
 <form [formGroup]="signupForm" class="form mt-4" (submit)="signup()">
 
     <div class="form-group">
-        <input formControlName="email" placeholder="email" class="form-control" autofocus >
+        <input #emailInput formControlName="email" placeholder="email" class="form-control" autofocus >
         <ap-vmessage *ngIf="signupForm.get('email').errors?.required" text="Email is required!"></ap-vmessage>  
         <ap-vmessage *ngIf="signupForm.get('email').errors?.email" text="Invalid Email!"></ap-vmessage>  
     </div>
@@ -29,7 +29,7 @@
         <ap-vmessage *ngIf="signupForm.get('password').errors?.maxlength" text="Maximum length is 14!"></ap-vmessage>
     </div>
 
-    <button [disabled]="signupForm.Invalid || signupForm.pending" class="btn btn-primary btn-block">Register</button>
+    <button [disabled]="signupForm.invalid || signupForm.pending" class="btn btn-primary btn-block">Register</button>
 
     <p>Already a user?<a [routerLink]="['']"> Sign In!</a></p>
     
