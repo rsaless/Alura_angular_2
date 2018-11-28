@@ -1,5 +1,5 @@
-# Alura Angular 2
-Continuação do projeto iniciado no primeiro módulo do curso de Angular da alura. Dispondo de 2 projetos:
+# Alura Angular 3
+Continuação do projeto desenvolvido nos dois primeiros módulos do curso de Angular da Alura.
 
 
 ## Alurapic
@@ -12,8 +12,8 @@ Projeto Node com uma web API para o back-end da aplicação
 
 ### Método manual
 
-> git clone https://github.com/rsaless/Alura_angular_2     
-> cd Alura_angular_2      
+> git clone https://github.com/rsaless/Alura_angular_3     
+> cd Alura_angular_3      
 
 #### Alurapic (Angular)
 > cd alurapic  
@@ -28,8 +28,8 @@ Projeto Node com uma web API para o back-end da aplicação
 
 ### Método automatizado
 
-> git clone https://github.com/rsaless/Alura_angular_2     
-> cd Alura_angular_2      
+> git clone https://github.com/rsaless/Alura_angular_3     
+> cd Alura_angular_3      
 > cd scripts  
 > setup  
 
